@@ -1,0 +1,24 @@
+<html>
+	<head>
+		<title>Click Event</title>
+	</head>
+	<body>
+
+		<p id="demo">Click on button to change color of the text</p>
+		<br>
+	
+		<button id="btn">Change color</button>
+
+		<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+		<script>
+			$(document).ready(function(){
+				$("#btn").click(function(){
+					$("#demo").css({
+						"color" : "blueviolet" 
+					});
+				});
+			});
+		</script>
+	</body>
+</html>
