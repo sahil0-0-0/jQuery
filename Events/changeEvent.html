@@ -1,0 +1,26 @@
+<html>
+	<head>
+		<title>Change Event</title>
+	</head>
+	<body>
+
+		<select id="demo">
+			<option value="surat">surat</option>
+			<option value="pune">pune</option>
+			<option value="delhi">delhi</option>
+			<option value="mumbai">mumbai</option>
+		</select>
+
+		<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+		<script>
+			$(document).ready(function(){
+				$("#demo").change(function(){
+					$("#demo").css({
+						"background-color" : "blueviolet"
+					});
+				});
+			});
+		</script>
+	</body>
+</html>

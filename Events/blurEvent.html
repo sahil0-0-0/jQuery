@@ -1,0 +1,24 @@
+<html>
+	<head>
+		<title>Blur event</title>
+	</head>
+	<body>
+
+		<input id="demo" placeholder="First Name" type="text">
+		<br><br>
+		<input  placeholder="Second Name" type="text">
+
+
+		<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+		<script>
+			$(document).ready(function(){
+				$("#demo").blur(function(){
+					alert("blur event occur") ;
+				});
+			});
+		</script>
+
+
+	</body>
+</html>
