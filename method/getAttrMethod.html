@@ -1,0 +1,44 @@
+<html>
+	<head>
+		<title>Get Attr</title>
+		<style>
+			#frame {
+				height: 500px ;
+				width: 500px ;
+				border: solid 10px blueviolet ;
+				border-radius: 20px ;
+				overflow: hidden;
+			}
+			button {
+				margin-left: 5% ;
+			}
+		</style>
+	</head>
+	<body>
+
+		<div id="frame">
+			<img id="img" src="https://i.pinimg.com/564x/56/ce/5c/56ce5cf1623e3ee5d53ca85d156fcc98.jpg">
+		</div>
+
+		<br><br>
+
+		<button id="dogbtn">🐶</button>
+		<button id="catbtn">🐱</button>
+
+
+		<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+		<script>
+			$(document).ready(function(){
+				$("#dogbtn").click(function(){
+					$("#img").attr( "src" , "https://i.pinimg.com/564x/63/e6/5c/63e65c9f222efd5f9a7656c00bd4de1a.jpg") ;
+				});
+
+				$("#catbtn").click(function(){
+					$("#img").attr("src" , "https://i.pinimg.com/564x/56/ce/5c/56ce5cf1623e3ee5d53ca85d156fcc98.jpg" )
+				});
+			});
+		</script>
+
+	</body>
+</html>
